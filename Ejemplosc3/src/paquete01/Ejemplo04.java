@@ -33,6 +33,9 @@ public class Ejemplo04 {
             suma = 0;
             for (int col = 0; col < arreglo1[fila].length; col++) {
                 suma = suma + arreglo1[fila][col];
+                // 0 + arreglo1[0][0]// 0+10  // 10
+                // 10 + arreglo1[0][0]// 0+10  // 10
+                // 30 + arreglo1[0][0]// 30+40  // 10
             }
             System.out.printf("Suma de valores del arreglo: %d\n", suma);
         }

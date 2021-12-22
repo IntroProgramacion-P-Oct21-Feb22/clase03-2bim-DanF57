@@ -10,18 +10,26 @@ package paquete03;
  * @author reroes
  */
 public class Ejemplo01 {
-    
+
     public static void main(String[] args) {
-        double[][] notas = {{9, 10, 7, 8}, {10, 5, 7, 9}, {7, 9.4, 10, 9}};
+        
+        double[][] notas = {{9, 10, 7, 8},
+                            {10, 5, 7, 9},
+                            {7, 9.4, 10, 9}};
         String[] nombresEstudiante = {"Jose A", "Elena J", "Paúl L"};
-        double[] sumaNotas = new double[3];
+        double[] sumaNotas = new double[3]; //{34, 0, 0}
         double suma;
         String reporte = "";
-        
+
         for (int i = 0; i < notas.length; i++) {
-            suma = 0;
-            for (int j = 0; j < notas[i].length; j++) {
+            suma = 0; // 0
+            for (int j = 0; j < notas[i].length; j++) { // 0<notas[0].lenght
+                // 0<4//1<4//2<4//3<4//4<4
                 suma = suma + notas[i][j];
+                // 0 + notas[0][0] // 0 + 9 // 9
+                // 9 + notas[0][1] // 9 + 10 // 19
+                // 19 + notas[0][2] // 19 + 7 // 26
+                // 26 + notas[0][3] // 26+ 8 // 34
             }
             sumaNotas[i] = suma;
         }
@@ -33,8 +41,8 @@ public class Ejemplo01 {
                     nombresEstudiante[i],
                     sumaNotas[i]);
         }
-        
+
         System.out.printf("%s\n", reporte);
-        
+
     }
 }
